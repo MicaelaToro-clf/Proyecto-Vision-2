@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Visión</title>
+  <style>
+    body {
+      background-color: #fff9e6;
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      position: relative; /* Necesario para imágenes de fondo */
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: clamp(2rem, 5vw, 3em); /* Texto responsivo */
+    }
+
+    .container {
+      margin: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Espaciado moderno */
+    }
+
+    .button {
+      display: inline-block;
+      padding: 20px 40px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      flex: 1 0 200px; /* Adaptación responsive */
+      max-width: 250px;
+    }
+
+    .button:hover {
+      background-color: #333;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .instructions {
+      margin: 40px auto;
+      font-size: 1.1em;
+      color: #333;
+      max-width: 600px;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    /* Imágenes de fondo optimizadas */
+    .bg-img {
+      position: fixed;
+      z-index: -1;
+      opacity: 0.07;
+      width: min(20vw, 160px); /* Tamaño responsivo */
+      height: auto;
+      pointer-events: none; /* Mejora la interactividad */
+    }
+
+    .img1 { top: 5%; left: 5%; }
+    .img2 { top: 20%; right: 10%; }
+    .img3 { bottom: 10%; left: 10%; }
+    .img4 { bottom: 5%; right: 5%; }
+
+    @media (max-width: 768px) {
+      .button {
+        padding: 15px 30px;
+        font-size: 1em;
+      }
+      .bg-img {
+        opacity: 0.05; /* Más transparente en móviles */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Proyecto Visión</h1>
+
+  <div class="container">
+    <a class="button" href="Siluetas/index.html" target="_blank">Siluetas</a>
+    <a class="button" href="Circulo/index.html" target="_blank">Círculo</a>
+    <a class="button" href="Rotacion/index.html" target="_blank">Rotación</a>
+  </div>
+
+  <div class="instructions">
+    <p>Presiona en cada botón para interactuar con una imagen. Las imágenes reaccionan al hacer clic en la pantalla.</p>
+    <p>¡Captura el momento que más te guste y compártelo en redes sociales con el hashtag <strong>#proyectovision</strong>!</p>
+  </div>
+
+  <!-- Imágenes con rutas corregidas -->
+  <img src="assets/images/2.png" class="bg-img img1" alt="Decoración abstracta">
+  <img src="assets/images/3.png" class="bg-img img2" alt="Elemento gráfico">
+  <img src="assets/images/4.png" class="bg-img img3" alt="Detalle visual">
+  <img src="assets/images/5.png" class="bg-img img4" alt="Motivo decorativo">
+</body>
+</html>
